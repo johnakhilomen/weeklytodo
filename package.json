@@ -1,0 +1,19 @@
+{
+  "name": "weeklytodo",
+  "version": "1.0.0",
+  "description": "This is a software that helps you plan your week ahead.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnakhilomen/weeklytodo.git"
+  },
+  "author": "John Akhilomen and Anar Jafarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnakhilomen/weeklytodo/issues"
+  },
+  "homepage": "https://github.com/johnakhilomen/weeklytodo#readme"
+}
