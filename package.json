@@ -20,7 +20,7 @@
   "homepage": "https://github.com/johnakhilomen/weeklytodo#readme",
   "dependencies": {
     "cuid": "^2.1.8",
-    "jQuery": "^1.7.4",
+    "jquery": "^3.5.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
