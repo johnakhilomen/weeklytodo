@@ -1,1 +1,3 @@
-console.log("Message");
+export let init = () => {
+    console.log("Called from init");
+}
