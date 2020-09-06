@@ -1,13 +1,15 @@
 import $ from "jQuery";
-import {generateForm, headerComponent} from "./generateHTMLComponents";
+import {generateForm, headerComponent, generateCalendarComponent} from "./generateHTMLComponents";
+import {daysInMonth, getFirstDay, formatCalendar} from "./generateCalendar";
 
 export let init = () => {
     console.log("Called from init");
     renderIndexPage();
+    formatCalendar("calendarBody");
+
 }
 
 let renderIndexPage = () => { //function renderIndexPage
-
     $("#root").html(`
     ${generateContainer()}
     `);
@@ -16,29 +18,10 @@ let renderIndexPage = () => { //function renderIndexPage
 let generateContainer = () => {
     return `
     ${headerComponent()}
+    ${generateCalendarComponent()}
     <div class="container">
     <h5>Start your weekly planner</h5>
     ${generateForm()}
     </div>`;
 }
 
-let getNumberOfDays = (month, year) => {
-    return new Date(year, month, 0).getDate(); 
-}
- 
-let createCalendar = () => {
-    //Jan starts from 0 and December ends at 11 for months
-var firstDay = new Date(2020, 0, 1);
-var lastDay = new Date(2020, 0 + 1, 0);
-
-    let table = `
-    <table>
-    
-    </table>`
-}
-
-let tableRow = () => {
-    let trow = `<tr>
-    
-    </tr>`
-}
